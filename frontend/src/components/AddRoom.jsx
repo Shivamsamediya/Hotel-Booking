@@ -28,7 +28,7 @@ const AddRoom = () => {
     };
 
     try {
-      await axios.post('http://localhost:5000/rooms', payload);
+      await axios.post('https://hotel-booking-five-red.vercel.app/rooms', payload);
       alert('Room added successfully!');
       setTimeout(() => {
         navigate('/');

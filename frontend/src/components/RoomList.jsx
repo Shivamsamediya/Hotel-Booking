@@ -8,7 +8,7 @@ const RoomList = () => {
 
   useEffect(() => {
     axios
-      .get('http://localhost:5000/rooms')
+      .get('https://hotel-booking-five-red.vercel.app/rooms')
       .then((res) => setRooms(res.data))
       .catch(() => setRooms([]));
   }, []);

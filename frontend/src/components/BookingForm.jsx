@@ -21,7 +21,7 @@ const BookingForm = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     axios
-      .post('http://localhost:5000/bookings', form)
+      .post('https://hotel-booking-five-red.vercel.app/bookings', form)
       .then((res) => {
         localStorage.setItem('bookingID',res.data._id);
         setMsg('✅ Booking successful!');

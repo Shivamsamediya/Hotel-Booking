@@ -12,7 +12,7 @@ const ManageBooking = () => {
   
   const fetchBooking = async () => {
     try {
-      const res = await axios.get(`http://localhost:5000/bookings/${bookingId}`);
+      const res = await axios.get(`https://hotel-booking-five-red.vercel.app/bookings/${bookingId}`);
       setBooking(res.data);
       setError('');
     } catch (err) {
@@ -23,7 +23,7 @@ const ManageBooking = () => {
 
   const cancelBooking = async () => {
     try {
-      await axios.delete(`http://localhost:5000/bookings/${bookingId}`);
+      await axios.delete(`https://hotel-booking-five-red.vercel.app/bookings/${bookingId}`);
       setBooking(null);
       setMessage('✅ Booking cancelled successfully!');
       
