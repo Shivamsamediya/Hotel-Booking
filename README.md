@@ -15,7 +15,6 @@ A full-stack room booking application built with the **MERN stack** (MongoDB, Ex
 ## 🚀 Steps
 cd backend
 npm install
-node roomsdata.js
 npm run dev
 
 cd frontend
